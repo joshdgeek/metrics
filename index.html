@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="metrics.js"></script>
+    <title>metrics converter</title>
+</head>
+<body>
+    <div id="container">
+        <h2>METRICS CONVERTER</h2>
+         <div class="flexbox">
+
+            <div class="box">   <!--box start-->
+               <h1>convert</h1>
+
+               <form onsubmit="submit">
+                unit 1:  <input type="text" id="num"/>  
+                  
+                <select id="sel1">
+                    <option value="cm">centimeter</option>
+                    <option value="m">meter</option>
+                    <option value="km">Kilometer</option>
+                    <option value="mile">Mile</option>
+                </select>
+                
+                <br/>
+              convert to   <select id="sel2">
+                <option value="cm">centimeter</option>
+                <option value="m">meter</option>
+                <option value="km">Kilometer</option>
+                 <option value="mile">Mile</option>
+             </select>
+
+
+              <br/>
+              <input type="reset"/>
+                  
+              
+             </form>
+            <button onclick="submit()">submit</button>
+           
+                   <div class="ans-cont">
+                       <h2 align="center"> ANSWER</h2>
+                    <div class="answer"></div>
+
+                  </div>
+                   
+
+            </div> <!--box end -->
+          
+         </div>
+    </div>
+
+    <footer>
+        <h3 align="center">Josh d Geek</h3>
+    </footer>
+</body>
+</html>
